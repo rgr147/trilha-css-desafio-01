@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .banner {
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
@@ -6,3 +8,33 @@
     border: 0px 0px 1px 0px;
     border-bottom: solid #33a8db;
 }
+#course-content {
+    width:792;
+    height: 325; 
+}
+#course-content > h2 {
+    color: #33A8DB;
+    font-family: Raleway;
+    font-size: 32px;
+    /* font-weight: 700px; */
+    line-height: 37.57px;
+    letter-spacing: 0.19em;
+    text-align: left;
+
+}
+
+/*
+width: 477px;
+height: 38px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 32px;
+font-weight: 700;
+line-height: 37.57px;
+letter-spacing: 0.19em;
+text-align: left;
+background: #33A8DB;
+background: #33A8DB;
+
+*/
