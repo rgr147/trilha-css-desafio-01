@@ -4,10 +4,7 @@ body {
     background-color: #000000;
     width: 1440px;
     height: 2491px;
-    margin: auto;   
-
-    /* Borda apenas para refencia de edição */
-        /* border: 1px solid blue; */
+    margin: auto;
 }
 .banner{
     width: 1440px;
@@ -28,9 +25,6 @@ body {
     margin-left: 465px;
     gap: 16px;
     padding:1%;
-    
-    /* Aepnas para referencia */
-    /* border: 2px solid #ffffff; */
 }
 .logo img{
     width: 268px;
@@ -84,17 +78,3 @@ hr {
     border: none;
     background-color: #33A8DB;  
 }
-
-
-/*
-    width: 1060px;
-height: 0px;
-top: 669px;
-left: 190px;
-gap: 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-angle: 0 deg;
-
-
-*/
