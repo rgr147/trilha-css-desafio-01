@@ -76,3 +76,7 @@ body {
     text-align:center;
     color: #31A8DD;
 }
+.banner-content button:hover {
+    background-image: linear-gradient(#3ba1cd,#1572b7);
+    color:white;
+}
