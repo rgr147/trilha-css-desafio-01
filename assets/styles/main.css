@@ -2,6 +2,7 @@
 
 /* Inicio da configuração do header */
 
+/*Removendo configurações individuais dos navegadores*/
 * {
     padding: 0;
     margin: 0;
@@ -9,32 +10,28 @@
     list-style: none;
     border: 0;
 }
+
 body {
-    background-color: #000000;
-    width: auto;
+    width: 100%;
     height: 2491px;
-    /* margin: auto; */
+    background-color: #000000;
 }
 .banner{
-    width: inherit;
-    height: 751px;
-    background-image: url('/assets/images/banner.png'), linear-gradient(#000000,#31a8dd60,#000000);
-    text-align: center;
-    border: 0px;
+    width: auto;
+    height: 605px;
     border-bottom: 1px solid #33a8db;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    
-    position: relative;
+    text-align: center;
+    background-image: url('/assets/images/banner.png'), linear-gradient(#000000,#31a8dd60,#000000);
+    background-size: 100% 100%;
 }
 .banner-content {
     width: 510px;
     height: 393px;
     top: 56px;
+    margin:auto;
+
     position: relative;
     gap: 16px;
-    display: inline-grid;
 }
 .logo {
     width: 268px;
@@ -44,11 +41,10 @@ body {
     border-radius: 50%;
 }
 .logo img{
-    width: 248px;
     height: 214px;
-    position: absolute;
+    position: relative;
     top: 27px;
-    left: 129px;
+    margin: auto;
 }
 .logo ~ h1{
     width: 434px;
@@ -58,7 +54,9 @@ body {
     font-size: 40px;
     line-height: 46.96px;
     color: transparent;
-    margin-left: 10%;
+    margin: auto;
+    position: relative;
+    top: 16px;
 
     background-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     -webkit-background-clip: text;
@@ -67,32 +65,37 @@ body {
 .logo ~ p {
     width: 510px;
     height: 46px;
+    margin:auto;
+    position: relative;
+    top: 30px;
     font-family: Raleway;
-    font-weight: 351;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: larger;
     line-height: 23.48px;
-    text-align: justify;
+    text-align: center;
     color: #ffffff;
 }
 .banner-content button {
-    width: 341px;
+    width: 326px;
     height: 57px;
-    display: grid;
+    margin: auto;
+    position:relative;
+    top: 14%;
     gap: 31px;
-    margin:auto;
-    padding: 19px 19px;
-    background-color: transparent;
+    padding: 19px 42px;
+
     border: 2px solid;
     border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
     border-image-slice: 1;
-
-    text-transform: uppercase;
+    background-color: transparent;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 900;
     line-height: 18.78px;
     letter-spacing: 0.21em;
     color: #31A8DD;
+    text-transform: uppercase;
+    text-align: center;    
 }
 .banner-content button:hover {
     background-image: linear-gradient(#3ba1cd,#1572b7);
@@ -101,28 +104,26 @@ body {
 
 /*Inicio da configuração main */
 
-main {
-
-}
 #course-content {
-    width: 792px;
+    width: auto;
     height: 325px;
-    margin: 100px auto;
-    display: grid;
-    gap: 24px;
+    margin: auto;
+    top: 118px;
+    bottom: 0px;
+    position: relative;
 }
 #course-content h2 {
-    width: 483px;
+    width: 477px;
     height: 38px;
+    margin: auto;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 31px;
     line-height: 37.57px;
     letter-spacing: 0.19em;
     color: #33a8db;
     text-transform:uppercase;
-    text-align: justify;
-    margin: auto;
+    text-align: center;
 }
 #course-content p {
     width: 792px;
@@ -131,35 +132,34 @@ main {
     font-weight: 400;
     font-size: 16px;
     line-height: 18.78px;
-    margin: 30px auto;
+    margin: auto;
+    top: 24px;
+    bottom: 0px;
+    position: relative;
     text-align: center;
     color: #ffffff;
 }
 .modules-list {
-    position:relative;
-    display: list-item;
-    margin-top: -50px;
+    margin: auto;
+    top: 24px;
+    bottom: 0px;
+    position: relative;
 }
 .module {
     width: 535px;
     height: 51px;
+    margin: 24px auto;
     border-radius: 57px;
     border: 1px solid #33A8DB;
     background: #252525;
     box-shadow: -2px 6px 4px 0px #00000066 inset;
-
+    
     font-family: Raleway;
     font-weight: 400;
     font-size: 16px;
-    line-height: 18.78px;
-    /* text-align: center; */
-    margin: 25px auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    line-height: 50.78px;
     color: #ffffff;
-    letter-spacing: 1px;
+    text-align: center;
 }
 .module span {
     color:#33a8db;
@@ -167,17 +167,22 @@ main {
 #transform-world {
     width: auto;
     height: 363px;
-    border: 1px #33a8db solid;
+    top: 228px;
+    bottom: 0;
+    position:relative;
+    border: #33a8db solid 1px;
+
+    background-size:cover;
     background-image: url('../images/woman-code.png');
-    background-size: cover;
     background-attachment: fixed;
-}
+    background-repeat: no-repeat;
+ }
 #transform-world p {
-    /* border: red solid 1px; */
     width: 244px;
     height: 141px;
     position: relative;
     top: 111px;
+    bottom: 0px;
     left: 198px;
 
     font-family: Raleway;
@@ -188,14 +193,17 @@ main {
     text-transform: lowercase;
     text-shadow: 2px 3px #33A8DB;
 }
+#professional-challenges {
+    width: auto;
+    height: 635px;
+    text-align: center;
+    top: 304px;
+    position: relative;
+}
 #professional-challenges h2 {
-    border: yellow solid 2px;
-    
     width: 746px;
     height: 76px;
-    position: relative;
-    top: 76px;
-    margin-left: 347px;
+    margin: auto;
     color: #33A8DB;
 
     font-family: Raleway;
@@ -207,23 +215,20 @@ main {
     letter-spacing: 4pt;
     word-spacing: 3pt;
 }
-#professional-challenges img {
-    border: red solid 2px;
-    object-fit: contain;
+#professional-challenges > img {
     width: 659px;
     height: 429px;
-
+    margin: auto;
     position: relative;
     top: 32px;
-    left: 390px;
 }
 #professional-challenges p {
-    border: blue solid 2px;
     width: 792px;
     height: 76px;
+    margin: auto;
     position: relative;
     top: 40px;
-    left: 324px;
+
 
     font-family: Raleway;
     font-weight: 400;
@@ -233,35 +238,35 @@ main {
     color: #ffffff;
 }
 footer {
-    border: green solid 2px;
-    width: 1440px;
+    width: auto;
     height: 170px;
-    position: absolute;
-    top: 2321px;
+    position: relative;
+    top:393px;
+    text-align: center;
+    
     background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
 }
 .dio-logo {
     width: 310px;
     height: 44px;
+    margin: auto;
     position:relative;
     top: 59px;
-    left: 565px;
 }
 footer p {
     width: 259px;
     height: 19px;
-    position: absolute;
-    top: 113px;
-    left: 591px;
+    margin: auto;
+    position: relative;
+    top: 69px;
     color: white;
 
     font-family: Raleway;
     font-weight: 400;
     font-size: 16px;
     line-height: 18.78px;
-    text-align: center;
+
 }
 footer p a {
     font-weight: 700;
 }
-
