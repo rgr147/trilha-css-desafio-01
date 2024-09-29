@@ -21,7 +21,7 @@ body {
     height: 605px;
     border-bottom: 1px solid #33a8db;
     text-align: center;
-    background-image: url('/assets/images/banner.png'), linear-gradient(#000000,#31a8dd60,#000000);
+    background-image: url('/assets/images/banner.png'), linear-gradient(#00000000,#31a8dd20,#000000);
     background-size: 100% 100%;
 }
 .banner-content {
