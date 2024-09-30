@@ -1,49 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    background-color: #000000;
-    width: 100%;
-    height: 2491px;
-    margin: auto;
+.container {
+    display:flex;
+    flex-direction:column;
+    height:2491px;
+    background-color:#000000;
 }
-.banner{
-    width: inherit;
-    height: 605px;
+.banner {
+    display: flex;
+    width:100%;
+    height:605px;
     background-image: url('/assets/images/banner.png'), linear-gradient(#000000,#31a8dd60,#000000);
+    align-items: center;
     text-align: center;
-    border: 0px;
-    border-bottom: 1px solid #33a8db;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    
-    position: relative;
+    border-bottom:1px solid #33a8db;
+    background-size:cover;
+    background-repeat:no-repeat;
+    justify-content: center;
 }
 .banner-content {
-    width: 510px;
-    height: 393px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    width:510px;
+    height:393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:56px;
 }
-
 .logo img{
-    width: 248px;
-    height: 214px;
-    top: 27px;
-    left: 131px;
+    width:248px;
+    height:214;
+    margin-top:27px;
 }
-.logo ~ h1{
-    width: 434px;
+.logo ~ h1 {
+    width: 434px; 
     height: 47px;
     font-family: Raleway;
     font-weight: 900;
     font-size: 40px;
     line-height: 46.96px;
+    margin-top:16px;
     color: transparent;
-    margin-left: 10%;
 
     background-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     -webkit-background-clip: text;
@@ -56,16 +53,14 @@ body {
     font-weight: 351;
     font-size: 20px;
     line-height: 23.48px;
-    text-align: justify;
+    margin-top: 16px;
     color: #ffffff;
 }
 .banner-content button {
     width: 326px;
     height: 57px;
-    /* margin-top: 5%; */
     background-color: transparent;
-    /* border: 2px solid; */
-    /* padding: 19px 53px; */
+    border: 2px solid;
     border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
     border-image-slice: 1;
     font-family: Raleway;
@@ -75,6 +70,8 @@ body {
     letter-spacing: 0.21em;
     text-align:center;
     color: #31A8DD;
+    padding: 19px 19px;
+    margin-top: 24px;
 }
 .banner-content button:hover {
     background-image: linear-gradient(#3ba1cd,#1572b7);
