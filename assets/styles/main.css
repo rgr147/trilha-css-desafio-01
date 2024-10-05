@@ -18,6 +18,8 @@ body {
 }
 /*Inicio configuração do header da página*/
 .banner{
+    display: flex;
+    justify-content: center;
     width: auto;
     height: 37.813rem;;
     border-bottom: 1px solid #33a8db;
