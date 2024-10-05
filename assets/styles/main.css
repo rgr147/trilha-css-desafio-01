@@ -9,93 +9,94 @@
     vertical-align: baseline;
     list-style: none;
     border: 0;
+    box-sizing:border-box;
 }
-
 body {
-    width: 100%;
-    height: 2491px;
     background-color: #000000;
+    display:flex;
+    width:100%;
+    flex-direction: column;
 }
 .banner{
-    width: auto;
-    height: 605px;
+    display:flex;
+    width: 100%;
+    height: 37.813rem;
     border-bottom: 1px solid #33a8db;
-    text-align: center;
     background-image: url('/assets/images/banner.png'), linear-gradient(#000000,#31a8dd60,#000000);
-    background-size: 100% 100%;
+    /* align-items: center; */
+    justify-content:center;
 }
 .banner-content {
-    width: 510px;
-    height: 393px;
-    top: 56px;
-    margin:auto;
-
-    position: relative;
-    gap: 16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:31.875rem;
+    height:24.563rem;
+    gap: 1rem;
+    margin-top:3.5rem;
 }
 .logo {
-    width: 268px;
-    height: 268px;
-    margin: auto;
-    background:#00000020;
-    border-radius: 50%;
+    display:flex;
+    width: 16.75rem;
+    height: 16.75rem;
+    align-items:center;
+    justify-content: center;
+    
 }
 .logo img{
-    height: 214px;
-    position: relative;
-    top: 27px;
-    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:15.5rem;
+    height:13.375rem;
+    top:1.688rem;
+    background:#00000030;
+    border-radius: 50%;
 }
 .logo ~ h1{
-    width: 434px;
-    height: 47px;
+    max-width: 27.125rem;
+    height: auto;
     font-family: Raleway;
     font-weight: 900;
-    font-size: 40px;
-    line-height: 46.96px;
+    font-size: 2.5rem;
+    line-height: 2.935rem;
     color: transparent;
-    margin: auto;
-    position: relative;
-    top: 16px;
-
     background-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    justify-content: center;
 }
 .logo ~ p {
-    width: 510px;
-    height: 46px;
+    display:flex;
+    align-items: center;
+    max-width: 31.875rem;
+    height: 2.875rem;
     margin:auto;
-    position: relative;
-    top: 30px;
     font-family: Raleway;
     font-weight: 400;
     font-size: larger;
-    line-height: 23.48px;
+    line-height: 1.468rem;
     text-align: center;
     color: #ffffff;
+    margin-top: 1rem;
 }
 .banner-content button {
-    width: 326px;
-    height: 57px;
-    margin: auto;
-    position:relative;
-    top: 14%;
-    gap: 31px;
-    padding: 19px 42px;
-
-    border: 2px solid;
+    display: flex;
+    width: 20.375rem;
+    height: 3.563rem;
+    padding: 1.188rem 4.547rem;
+    margin-top: 1.5rem;
+    border: 0.125rem solid;
     border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
     border-image-slice: 1;
     background-color: transparent;
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 900;
-    line-height: 18.78px;
-    letter-spacing: 0.21em;
+    line-height: 1.188rem;
+    letter-spacing: 21%;
     color: #31A8DD;
     text-transform: uppercase;
-    text-align: center;    
 }
 .banner-content button:hover {
     background-image: linear-gradient(#3ba1cd,#1572b7);
@@ -103,61 +104,60 @@ body {
 }
 
 /*Inicio da configuração main */
-
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #course-content {
-    width: auto;
-    height: 325px;
-    margin: auto;
-    top: 118px;
-    bottom: 0px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 49.5rem;
+    min-height: 20.313rem;
+    margin-top: 7.375rem;
+    gap: 1.5rem;
 }
 #course-content h2 {
-    width: 477px;
-    height: 38px;
-    margin: auto;
+    max-width: 100%;
+    min-height: 2.438rem;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 31px;
-    line-height: 37.57px;
+    font-size: 2rem;
+    line-height: 2.348rem;
     letter-spacing: 0.19em;
     color: #33a8db;
     text-transform:uppercase;
     text-align: center;
 }
 #course-content p {
-    width: 792px;
-    height: 38px;
+    max-width: 49.5rem;
+    min-height: 2.375rem;
     font-family: Raleway;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
-    margin: auto;
-    top: 24px;
-    bottom: 0px;
-    position: relative;
+    font-size: 1rem;
+    line-height: 1.174rem;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
 }
 .modules-list {
-    margin: auto;
-    top: 24px;
-    bottom: 0px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.625rem;
+    top: 1rem;
 }
 .module {
-    width: 535px;
-    height: 51px;
-    margin: 24px auto;
-    border-radius: 57px;
+    max-width: 33.438rem;
+    min-height: 3.188rem;
+    border-radius: 3.563rem;
     border: 1px solid #33A8DB;
     background: #252525;
-    box-shadow: -2px 6px 4px 0px #00000066 inset;
-    
+    box-shadow: -0.125rem 0.375rem 0.25rem 0rem #00000066 inset;
     font-family: Raleway;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 50.78px;
+    font-size: 1rem;
+    line-height: 3.174rem;
     color: #ffffff;
     text-align: center;
 }
@@ -165,107 +165,91 @@ body {
     color:#33a8db;
 }
 #transform-world {
-    width: auto;
-    height: 363px;
-    top: 228px;
-    bottom: 0;
-    position:relative;
-    border: #33a8db solid 1px;
-
+    display: flex;
+    flex-direction:column;
+    /* align-items: center; */
+    width: 100%;
+    height: 22.688rem;
+    margin-top: 5.625rem;
     background-size:cover;
     background-image: url('../images/woman-code.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
- }
+}
 #transform-world p {
-    width: 244px;
-    height: 141px;
-    position: relative;
-    top: 111px;
-    bottom: 0px;
-    left: 198px;
-
+    width: 15.25rem;
+    height: 8.813rem;
     font-family: Raleway;
     font-weight: 900;
-    font-size: 40px;
-    line-height: 46.96px;
+    font-size: 2.5rem;
+    line-height: 2.935rem;
     color: #ffffff;
     text-transform: lowercase;
-    text-shadow: 2px 3px #33A8DB;
+    text-shadow: 0.125rem 0.188rem #33A8DB;
+    margin-top:5%;
+    margin-left:12.5%;
 }
 #professional-challenges {
-    width: auto;
-    height: 635px;
-    text-align: center;
-    top: 304px;
-    position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width:100%;
 }
 #professional-challenges h2 {
-    width: 746px;
-    height: 76px;
-    margin: auto;
-    color: #33A8DB;
-
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 37.57px;
+    max-width: 46.625rem;
+    min-height:4.75rem;
+    color:#38a8db;
+    font-family:Raleway;
+    font-weight:700;
+    font-size:2rem;
+    letter-spacing: .19em;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4pt;
-    word-spacing: 3pt;
+    line-height: 2.348rem;
+    margin-top:4.75rem;
 }
-#professional-challenges > img {
-    width: 659px;
-    height: 429px;
-    margin: auto;
-    position: relative;
-    top: 32px;
+#professional-challenges img {
+    margin-top:2rem;
+    object-fit:contain;
+    max-width:41.188rem;
+    height:auto;
 }
 #professional-challenges p {
-    width: 792px;
-    height: 76px;
-    margin: auto;
-    position: relative;
-    top: 40px;
-
-
-    font-family: Raleway;
+    max-width:49.5rem;
+    min-height:4.75rem;
+    margin-top:2.5rem;
+    color:#ffffff;
+    text-align:center;
+    font-family: raleway;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
-    text-align: center;
-    color: #ffffff;
+    font-size: 1rem;
+    line-height:1.174rem;
 }
 footer {
-    width: auto;
-    height: 170px;
-    position: relative;
-    top:393px;
-    text-align: center;
-    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10.625rem;
+    margin-top: 5.688rem;
     background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
 }
 .dio-logo {
-    width: 310px;
-    height: 44px;
-    margin: auto;
-    position:relative;
-    top: 59px;
+    width: 19.375rem;
+    height: 2.75rem;
+    margin-top: 3.688rem;
 }
 footer p {
-    width: 259px;
-    height: 19px;
-    margin: auto;
-    position: relative;
-    top: 69px;
+    width: 16.188rem;
+    height: 1.188rem;
+    margin-top: 0.625rem;
+    margin-bottom:2.375rem;
     color: white;
-
     font-family: Raleway;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
-
+    font-size: 1rem;
+    line-height: 1.174rem;
 }
 footer p a {
     font-weight: 700;
